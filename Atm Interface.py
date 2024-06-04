@@ -1,5 +1,5 @@
 print("Hello! Welcome to our Atm")
-pin="7896"
+pin=["7896",'1234','0987','0879']
 balance= 50000
 atempt=0
 while True:
@@ -19,7 +19,7 @@ while True:
     #user pin
 
     upin=(str(input("Enter your pin Sir!: ")))
-    if (pin==upin):
+    if (upin in pin):
 
         #options
 
