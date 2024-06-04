@@ -31,7 +31,7 @@ while True:
         if (option=='1' or option== "Cash Withdraw"):
             cashw=int(input("Enter a amount which is multiple of 500\nMin-Amount=500        Max-Amount=20000\nEnter Cash to withdraw Sir: "))
             if (cashw%500 == 0 and cashw>=500 and cashw<=20000):
-                print("Here is your cash Sir!ThankYou for visiting our Atm")
+                print(f"Here is your cash {cashw} Sir!ThankYou for visiting our Atm")
                 balance=balance-cashw
             elif(cashw % 500 != 0):
                 print("Try a value which is multiple of 500!")
@@ -41,22 +41,22 @@ while True:
         elif (option=='2' or option=='Fast Cash'):
             fashC=input('A:500      B:1000\nC:2000      D:3000\nE:4000      F:5000\nEnter your option Sir: ').lower()
             if fashC=="a":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {500} Sir!')
                 balance=balance-500
             if fashC=="b":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {1000} Sir!')
                 balance=balance-1000
             if fashC=="c":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {2000} Sir!')
                 balance=balance-2000
             if fashC=="d":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {3000} Sir!')
                 balance=balance-3000
             if fashC=="e":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {4000} Sir!')
                 balance=balance-4000
             if fashC=="f":
-                print('Here is your cash Sir!')
+                print(f'Here is your cash {5000} Sir!')
                 balance=balance-5000
 
         #If option 3 = Balance Check
