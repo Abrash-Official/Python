@@ -76,5 +76,5 @@ while True:
             print('Bye Bye')
             break
 
-    if (pin!=upin):
+    else:
         print("Try Again!".center(30))
