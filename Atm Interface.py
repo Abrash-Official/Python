@@ -7,7 +7,7 @@ while True:
     # Don't Enough Money
 
     if balance <500:
-        print("You don't have enough money!!!")
+        print(f"You have {balance}Pkr left!!! You can't make any transaction under 500 Rupees.")
     
     # # atempts
 
@@ -30,7 +30,7 @@ while True:
 
         if (option=='1' or option== "Cash Withdraw"):
             cashw=int(input("Enter a amount which is multiple of 500\nMin-Amount=500        Max-Amount=20000\nEnter Cash to withdraw Sir: "))
-            if (cashw%500 == 0 and cashw>=500 and cashw<=20000):
+            if (cashw%500 == 0 and cashw>=500 and cashw<=20000 and balance>=500):
                 print(f"Here is your cash {cashw} Sir!ThankYou for visiting our Atm")
                 balance=balance-cashw
             elif(cashw % 500 != 0):
