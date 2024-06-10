@@ -38,7 +38,7 @@ while True:
 
         #If option 2 = Fash Cash
 
-        elif (option=='2' or option=='Fast Cash'):
+        elif ((option=='2' or option=='Fast Cash') and balance>=500):
             fashC=input('A:500      B:1000\nC:2000      D:3000\nE:4000      F:5000\nEnter your option Sir: ').lower()
             if fashC=="a":
                 print(f'Here is your cash {500} Sir!')
