@@ -1,4 +1,3 @@
-print("Hello World!")
 print("Hello! Welcome to our Atm")
 pin=["7896",'1234','0987','0879']
 balance= 50000
@@ -6,7 +5,6 @@ atempt=0
 while True:
 
     # Don't Enough Money
-    # hi
 
     if balance <500:
         print(f"You have {balance}Pkr left!!! You can't make any transaction under 500 Rupees.")
