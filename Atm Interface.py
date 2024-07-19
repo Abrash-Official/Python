@@ -9,24 +9,24 @@ while True:
     if balance <500:
         print(f"You have {balance}Pkr left!!! You can't make any transaction under 500 Rupees.")
     
-    # # atempts
+    # atempts
 
     # atempt+=1
     # if (atempt==4):
     #     print("Maximum trial reached!")
     #     break
 
-    #user pin
+    # User pin
 
     upin=(str(input("Enter your pin Sir!: ")))
     if (upin in pin):
 
-        #options
+        # Options
 
         print("Welcome Sir!\n1:Cash Withdraw        2:Fast Cash\n3:Balance Check       4:Cash Deposite\n5:Cancle")
         option=(str(input("Your Option: ".lower())))
 
-        #If option 1 = Cash Withdraw
+        # If option 1 = Cash Withdraw
 
         if (option=='1' or option== "Cash Withdraw"):
             cashw=int(input("Enter a amount which is multiple of 500\nMin-Amount=500        Max-Amount=20000\nEnter Cash to withdraw Sir: "))
@@ -36,7 +36,7 @@ while True:
             elif(cashw % 500 != 0):
                 print("Try a value which is multiple of 500!")
 
-        #If option 2 = Fash Cash
+        # If option 2 = Fash Cash
 
         elif ((option=='2' or option=='Fast Cash') and balance>=500):
             fashC=input('A:500      B:1000\nC:2000      D:3000\nE:4000      F:5000\nEnter your option Sir: ').lower()
@@ -59,7 +59,7 @@ while True:
                 print(f'Here is your cash {5000} Sir!')
                 balance=balance-5000
 
-        #If option 3 = Balance Check
+        # If option 3 = Balance Check
 
         elif (option=='3'):
             print(f'Your balance is {balance}Pkr')
